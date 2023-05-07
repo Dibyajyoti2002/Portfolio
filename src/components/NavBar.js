@@ -6,6 +6,7 @@ import navIcon3 from '../assets/img/nav-icon3.svg';
 
 function NB(){
 
+  const [isClicked, setIsClicked] = useState(false);
 
   const LOGO = "<Dibyajyoti />"
   const [activeLink, setActiveLink] = useState('home');
@@ -32,8 +33,8 @@ function NB(){
   return (
       <Navbar  expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
-            <h1>{LOGO}</h1>
+          <Navbar.Brand>
+            <h1 style={{"color":"cadetblue"}}>{LOGO}</h1>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
